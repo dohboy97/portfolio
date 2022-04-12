@@ -1,0 +1,302 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+header{
+  background-color: #F5F9FC;
+}
+
+* {
+  background-color: #F5F9FC;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav {
+  display:flex;
+  justify-content:space-between;
+  padding:5%;
+  padding-top: 20px;
+  padding-bottom:20px
+
+}
+
+nav h2 {
+  margin:0px;
+  color:navy
+}
+
+nav ul {
+  list-style: none;
+  margin:0px;
+  display:flex;
+  align-items:center;
+  padding-right:30px
+  
+}
+
+nav li {
+  
+  padding-left:30px 
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: navy
+}
+
+nav button {
+  color: #F5F9Fc;
+  background-color:navy;
+  width: 100px;
+  height:30px;
+  border: 1px solid navy
+}
+
+
+
+/*====================================MAIN==
+=====================*/ 
+
+main {
+  background-color: #F5F9Fc;
+  padding-top:20px;
+  display:flex;
+  padding-bottom:40px
+}
+
+h1 {
+  margin-bottom:50px;
+  margin-top:50px
+}
+
+.top {
+  display:flex;
+  flex-direction:column;
+  padding-left: 10%;
+  
+}
+
+.top div{
+  display:flex
+}
+
+.phone {
+  width:50%;
+  display:flex;
+  justify-content:end
+}
+
+.top button {
+  background-color:navy;
+  color:white;
+  border:1px solid navy;
+  height:35px
+}
+
+.top input {
+  height: 35px
+}
+
+
+/*================================================
+======= main features */ 
+
+.mainFeatures{
+  display:flex;
+  background-color: #F5F9FC;
+  padding-top:20px;
+  padding-left:10%;
+  padding-right:10%;
+ 
+}
+
+.mainFeatures div {
+  font-size:17px;
+  padding-left: 5%;
+  padding-right:5%;
+  padding-bottom: 90px;
+}
+
+.mainFeatures h6 {
+  font-size: 20px;
+  margin-top:15px;
+  font-weight:bold;
+  margin-bottom:15px
+}
+
+.mainFeatures a {
+  font-weight:bold
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+/* =======================================================
+=================MEDIA QUERY ===========================*/
+
+@media (min-width:0px) and (max-width: 900px) {
+  nav button {
+    display:none
+  }
+
+  nav a {
+    display:none
+  }
+
+  header nav {
+    display:flex;
+    justify-content:center;
+    padding:5%;
+    padding-top: 20px;
+    padding-bottom:20px
+  
+  }
+  
+  nav h2 {
+    margin:0px;
+    color:navy
+  }
+  
+  nav ul {
+    list-style: none;
+    margin:0px;
+    display:flex;
+    align-items:center;
+    padding-right:30px
+    
+  }
+  
+  nav li {
+    
+    padding-left:30px 
+    
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: navy
+  }
+  
+  nav button {
+    color: #F5F9Fc;
+    background-color:navy;
+    width: 100px;
+    height:30px;
+    border: 1px solid navy
+  }
+  
+  
+  
+  /*====================================MAIN==
+  =====================*/ 
+  
+  main {
+    background-color: #F5F9Fc;
+    padding-top:20px;
+    display:flex;
+    flex-direction:column;
+    padding-bottom:40px;
+    align-items:center
+  }
+  
+  h1 {
+    margin-bottom:50px;
+    margin-top:50px;
+    
+  }
+  
+  .top {
+    display:flex;
+    flex-direction:column;
+    padding-left: 10%;
+    padding-right:10%;
+    
+    align-items:center
+    
+  }
+  
+  .top div{
+    display:flex;
+    flex-direction:column;
+    width: 70%
+  }
+  
+  .phone {
+    width:50%;
+    display:flex;
+    
+    justify-content:center;
+    padding-left: 10px;
+    padding-top:30px
+  }
+  
+  .top button {
+    background-color:navy;
+    color:white;
+    border:1px solid navy;
+    height:35px
+  }
+  
+  .top input {
+    height: 35px;
+    width:100%
+  }
+  
+  
+  /*================================================
+  ======= main features */ 
+  
+  .mainFeatures{
+    display:flex;
+    flex-direction: column;
+    background-color: #F5F9FC;
+    padding-top:20px;
+    padding-left:10%;
+    padding-right:10%;
+   
+  }
+  
+  .mainFeatures div {
+    font-size:17px;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-bottom: 90px;
+  }
+  
+  .mainFeatures h6 {
+    font-size: 20px;
+    margin-top:15px;
+    font-weight:bold;
+    margin-bottom:15px
+  }
+  
+  .mainFeatures a {
+    font-weight:bold
+  }
+
+}

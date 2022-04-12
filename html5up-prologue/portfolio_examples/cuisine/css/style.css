@@ -1,0 +1,693 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+* {
+  font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background-image: url(../espresso\ solo.jpg);
+  background-repeat: no-repeat;
+  width:100%;
+  background-size:cover;
+  background-position: center;
+  height:600px;
+  border-bottom:5px solid #6a4b3e
+  
+}
+
+nav ul {
+  list-style:none;
+  padding-left:0px;
+  display:flex;
+  justify-content: space-between;
+  width:60%
+  
+}
+
+
+
+nav a {
+  color:#574c4a;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight:bold;
+  transition:0.7s ease;
+}
+
+nav a:hover {
+  color:white
+}
+
+nav {
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding-right:8%;
+  width:100%;
+  padding-left:10%
+}
+
+nav i {
+  margin-left:40px;
+  color:white
+}
+
+.navIcons{
+  display:flex;
+  justify-content: space-around;
+}
+
+nav .fa-shopping-cart {
+  margin: 0px
+}
+
+.hamburger{
+  display:none
+}
+
+.bar{
+  display:block;
+  width:25px;
+  height:3px;
+  margin:5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+  background-color: #574c4a;
+}
+
+select {
+  font-weight: bold;
+  
+}
+
+.welcome{
+  
+  margin-top: 50px;
+  padding-left:10%
+}
+
+.welcome h1 {
+  font-size: 50px;
+  width: 450px;
+  margin-bottom:10px;
+  color: #574c4a
+}
+
+.welcome input {
+  width: 350px;
+  height: 40px;
+  
+  border:0px solid white;
+  padding: 0px
+}
+
+.welcome select {
+  height:40px;
+  background-color:#574c4a;
+  color:white;
+  border: 2px solid #574c4a;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius:5px;
+  
+}
+
+.welcome button {
+  background-color:white;
+  height:40px;
+  border:2px solid white;
+  border-top-left-radius:5px;
+  border-bottom-left-radius:5px;
+}
+
+.welcome a {
+  color: black;
+  transition:0.7s ease;
+}
+
+.welcome a:hover {
+  color:white
+}
+
+.welcome span {
+  padding-right: 20px;
+  color:white
+}
+
+.welcome div {
+  margin-top:20px
+}
+
+
+/* ===================================================
+=============== ABOUT US ==================== */ 
+
+main {
+  background-image: url(../cafe.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:fit-content;
+  width:100%;
+  padding-left: 15%;
+  padding-top: 60px;
+  padding-right: 15%;
+  padding-bottom:60px
+}
+
+main span {
+  color:white;
+  font-size: 25px;
+  font-weight:bold
+}
+
+main h2 {
+  font-size:34px;
+  color:#f6e7dc
+}
+
+main p {
+  font-size:18px;
+  color: white;
+  line-height:1.5
+}
+
+main button {
+  margin-top: 20px;
+  height: 50px;
+  width:150px;
+  background-color:#6a4b3e;
+  border:2px solid #6a4b3e;
+  border-radius: 5px;
+  color:#f6e7dc;
+  font-weight:bold
+
+}
+
+main p + button {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: 2px solid #948981
+}
+
+main button + button {
+  width:50px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #6a4b3e;
+  border:2px solid #6a4b3e
+
+}
+
+main button:hover{
+  cursor:pointer
+}
+
+main button a {
+  text-decoration: none;
+  color:#eed7bf;
+}
+
+
+/* =============================================================
+===============SPECIALITY CUISINE======================*/ 
+
+.specialty {
+
+background-color:#ddb18d;
+width:100%;
+height:fit-content;
+background-position:center;
+background-repeat: no-repeat;
+background-size: cover;
+border-bottom:5px solid #49403a;
+border-top:5px solid #49403a
+}
+
+
+
+.specialty p {
+  text-align:center;
+  color:#574c4a;
+  font-size: 24px;
+  margin-top:0px;
+  padding-top:20px;
+  font-weight:bold
+}
+
+.specialty h2 {
+  text-align:center;
+  font-size: 35px
+}
+
+.typesOfMeals{
+  display:flex;
+  justify-content: center;
+  width: 80%;
+  
+  margin: 0 auto;
+  
+  margin-bottom: 10px;
+  padding-bottom:10px
+}
+
+.typesOfMeals div {
+
+  
+  height:10px;
+  margin-bottom:40px
+}
+
+
+
+.typesOfMeals div a:hover {
+  color:white;
+  border-bottom: 2px solid white
+}
+
+
+
+.specialty a {
+  color:black;
+  text-decoration: none;
+  padding-left:30px;
+  padding-right:30px;
+  border-bottom: 2px solid black;
+  padding-bottom:10px
+
+}
+
+.foodImages {
+  display:flex;
+  flex-direction: column;
+  width:80%;
+  justify-content:center;
+  align-items: center;
+  margin:0 auto;
+  gap: 20px;
+  padding-bottom: 80px
+}
+
+.foodImages img {
+  border: 5px solid #6a4b3e;
+  border-radius: 5px;
+}
+
+.foodImages img {
+  max-width: 280px;
+  max-height: 350px
+}
+
+.container {
+  display:flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+/* ======================================================
+===============MENU==================================== */ 
+.menu {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  background-color: #eed7bf;
+  padding:30px 0px 50px 0px;
+  border-bottom:5px solid #49403a
+}
+
+.menu h2 {
+  font-size: 40px;
+  color: #49403a;
+  text-decoration: underline;
+}
+
+.menu img {
+  width: 90%;
+  max-width:700px
+  
+}
+
+
+
+/* =====================================================
+===============HOURS =====================*/ 
+
+.hours {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top:0px;
+  margin-top:30px;
+  margin-bottom:30px;
+  background-color: #8c8586;
+  border: 10px solid #353435;
+  border-radius: 5px
+}
+
+.hours p {
+  color:black;
+  font-size: 25px
+}
+
+.hours h3 {
+  margin-top:0px;
+  font-size: 50px;
+  margin-bottom:20px
+}
+
+.hours i {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  
+  
+  color:black;
+  border:2px solid black;
+  width:50px;
+  height:50px;
+  border-radius:55px;
+
+}
+
+.hours span {
+  margin-top: 20px;
+  font-size:30px
+}
+
+.hours h6 {
+  font-size:30px;
+  color:black;
+  margin-top: 20px
+}
+
+/*==========================================
+=================ESPRESSO==================*/
+
+.espresso {
+  background-image: url(../cafevibes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+  width:100%;
+  text-align: center;
+  border-bottom:5px solid #49403a
+}
+
+.espresso {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+  
+}
+
+.openWhen{
+  display:flex;
+  justify-content: space-between;
+  width: 100% !important;
+  color:black
+ 
+}
+
+.openWhen div{
+  background-color: #8c8586;
+  border: 10px solid #353435;
+  border-radius: 10px;
+}
+
+.espresso h3 {
+  font-size: 40px;
+  margin-top:0px;
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+
+.espresso div {
+  padding: 5%;
+  
+  
+}
+
+.espresso p {
+  margin-bottom: 10px;
+  margin-top:10px
+}
+
+.espresso h6 {
+  margin-top: 5px;
+  margin-bottom:5px
+}
+
+.espresso p, .espresso h6 {
+  font-size: 30px
+}
+
+
+/*============================================
+=============TESTIMONIALS==============*/ 
+
+.bottom {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding-left:10%;
+  padding-right:10%;
+  text-align:center;
+  padding-top: 50px;
+  padding-bottom:50px;
+  background-color:#eed7bf ;
+}
+
+.bottom span {
+  color:#49403a;
+  font-size: 25px;
+  
+}
+
+.bottom img {
+  border:5px solid #49403a;
+  border-radius: 20px;
+}
+
+.bottom h3 {
+  margin-top: 16px;
+  font-size: 35px;
+  margin-bottom: 16px;
+  color:#49403a
+}
+
+.bottom p {
+  line-height:1.5;
+  font-style: italic;
+  font-size:20
+}
+
+.real-nav-menu{
+  display:none
+}
+
+nav i:hover {
+  color:#574c4a;
+  transition: 0.7s ease
+}
+
+footer{
+  background-color: #b4a48e;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid #49403a
+}
+
+footer img {
+  max-width: 150px;
+  max-height: 60px;
+  
+}
+
+footer div {
+ 
+  margin: 20px 0 20px 0
+}
+
+footer div + div {
+  border-left: 1px solid #49403a;
+  padding-left: 10px;
+  height:50px;
+  display:flex;
+  align-items: center;
+}
+
+footer span {
+  font-size: 12px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media (max-width: 1024px){
+ 
+  .container{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .navIcons{
+    display:none
+  }
+
+  header{
+    height:800px
+  }
+
+  nav {
+    padding-top: 20px;
+    display:block;
+    background-color: #6a4b3e;
+    opacity: 90%;
+    width:100%;
+    
+  }
+
+  .hamburger{
+    display:block;
+    padding-bottom:10px
+    
+  }
+
+  .hamburger i {
+    color:#f6e7dc;
+    font-size: 30px;
+  }
+
+  .hamburger i:hover {
+    cursor:pointer;
+    color:#b4a48e;
+    transition:0.7s ease
+  }
+
+  nav i:hover, nav a:hover {
+    color:#b4a48e;
+    transition:0.7s ease
+  }
+
+  .nav-menu{
+    display:none
+  }
+
+  .real-nav-menu{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height:300px;
+    padding-bottom:15px
+    
+   
+  }
+
+  .real-nav-menu a {
+    color:#f6e7dc;
+  }
+
+  
+
+  .real-nav-menu i {
+    color:#f6e7dc;
+  }
+
+  .hideAndSeek{
+    display:none;
+    transition:0.7s ease
+  }
+
+  nav i {
+    margin:0px
+  }
+
+  .foodImages{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding-bottom:20px
+  }
+
+  .foodImages + .foodImages {
+    padding-bottom:50px
+  }
+
+  .typesOfMeals{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .welcome h1{
+    width:70%
+  }
+
+  header .welcome input{
+    width:30%
+  }
+
+  .openWhen{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%
+  }
+
+  .openWhen div {
+    background-color: #8c8586;
+    border: 10px solid #353435;
+  border-radius: 5px;
+    height:80%;
+    width:99%
+  }
+
+
+
+  .openWhenTwo{
+    
+    margin-top:50px
+  }
+
+  .specialty img {
+    width: 70%;
+    height: auto
+  }
+}

@@ -1,0 +1,437 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding-bottom:10px;
+  
+}
+
+li {
+  display:inline;
+  padding: 30px
+
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  padding-bottom:0px;
+  margin-bottom:0px;
+  
+
+}
+
+.book{
+  text-decoration: none;
+  color: black;
+  padding-top:15px;
+  padding-right: 5%
+
+}
+
+nav ul a {
+  text-decoration: none;
+  color:black
+}
+
+nav img {
+  height: auto;
+  padding-top:20px;
+  padding-bottom:0px;
+  padding-left: 5%
+}
+
+
+
+/*==============================================
+================== MAIN =============== */ 
+
+main::before {
+  clip-path: inset(-80px 0 0 -80px round 7%);
+}
+
+main {
+  background-image: url("../pinkhair.jpeg");
+  background-size:cover;
+  background-repeat:no-repeat; background-position: center;
+  height: 800px;
+ 
+  
+  padding-left: 10%;
+  padding-top:7%
+}
+
+h1 {
+  font-size: 70px;
+  color:white;
+}
+
+main p {
+  color:white; 
+  font-size:30px
+
+}
+
+.our_services_box {
+  width: 150px;
+  height:50px;
+  background-color:black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:30px
+}
+
+.our_services_box a {
+  color:white;
+  text-decoration: none;
+}
+
+.discount {
+  background-color:black;
+  height: 300px;
+  width: 250px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-evenly
+}
+
+.discount span, .discount h3, .discount p {
+  color:white
+}
+
+.discount a {
+  text-decoration: none;
+color:black}
+
+.discount button {
+  height: 50px;
+  width:200px;
+  margin-left:20px
+}
+
+.discount p {
+  height:30px;
+  font-size: 20px;
+  border-left: 2px solid white
+}
+
+.discount p, .discount h3 {
+  padding-left: 20px
+}
+
+.discount span {
+  font-size: 40px;
+}
+
+
+
+/* ==========================================================
+============ ICONS ================= */ 
+
+.icons {
+  display:flex;
+  margin-left: 10%;
+  margin-right:10%;
+  margin-top: 30px;
+  margin-bottom:30px
+}
+
+.icons div {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+  text-align:center;
+  line-height:1.5
+}
+
+.momentum {
+  background-color:lightgray;
+  display:flex;
+  
+  padding-right:5%;
+  padding-left: 5%;
+  
+}
+
+.momentum img {
+  width: 100%;
+  max-height: auto;
+}
+
+.momentum div {
+  width:50%;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  padding: 20px
+}
+
+.momentum_left h2 {
+  font-size: 40px;
+  
+}
+
+
+
+
+.momentum_left p {
+  margin-top:0px;
+line-height: 1.5;}
+
+.momentum_left button {
+  width: 150px;
+  background-color: black;
+  height: 50px
+}
+
+.momentum_left button a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* =====================================================
+==============STYLISTS=========
+======== */ 
+
+.stylists {
+  display:flex;
+  margin-bottom: 40px;
+  justify-content: space-around;
+  margin-top: 50px;
+  
+}
+
+
+.alita {
+  background-image: url(../stylist.jpeg);
+  background-size:cover;
+  background-repeat:no-repeat; background-position: top center;
+  
+ 
+ 
+}
+
+.ayesha {
+  background-image: url(../stylist2.jpeg);
+  background-size:cover;
+  background-repeat:no-repeat; background-position: top center;
+  
+}
+
+.smith{
+  background-image: url(../sylist3.jpeg);
+  background-size:cover;
+  background-repeat:no-repeat; background-position: top center;
+  
+}
+
+.stylists > div {
+  display:flex;
+  align-items: end;
+  justify-content: center;
+  width: 300px;
+  height: 400px
+
+}
+
+.stylists div > div {
+  background-color:black;
+  display:flex;
+  flex-direction:column;
+  width: 60%;
+  height:60px;
+  align-items:center;
+  justify-content:center;
+  position: relative;
+  top: 25px;
+  z-index:99
+  
+ 
+}
+
+.stylists span {
+  color:white;
+  font-weight:bold
+}
+
+.stylists span + span {
+  font-weight:normal
+}
+
+
+/* COLOR DAY OFFER ========================
+===================================== */ 
+
+.colour_day_offer {
+  
+  background-image: url(../discount.jpeg);
+  background-size:cover;
+  background-repeat:no-repeat; background-position: center;
+  width: 900px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top:100px;
+  color:white;
+  padding:4%;
+  margin-bottom: 100px
+
+  
+}
+
+.colour_day_offer p{
+  font-size: 20px;
+  
+}
+
+.colour_day_offer h3 {
+  font-size: 30px;
+  width: 400px;
+  margin-top:0px
+}
+
+.colour_day_offer span {
+  font-size: 50px
+}
+
+.colour_day_offer a {
+  text-decoration: none;
+  color:white
+}
+
+.colour_day_offer button {
+  background-color:black;
+  height: 50px;
+  width: 225px
+}
+
+/* =================================================
+===============GRIDDDDDDDDDDDDDD ========== */ 
+
+
+.lookbook {
+  display:flex;
+  justify-content:center;
+  align-items:center
+}
+
+
+
+.six img {
+  height:185px;
+  width: 159px;
+  
+}
+
+.five img {
+  width:159px;
+  height: 300px
+}
+
+.container {
+  height:100%;
+  padding:5px
+}
+
+.two, .four, .six {
+  padding-top: 8px
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+@media (min-width:0px) and (max-width:800px){
+  .icons {
+    display:flex;
+    flex-direction: column;
+   
+    margin-top: 30px;
+    margin-bottom:30px
+  }
+  
+  .icons div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    text-align:center;
+    line-height:1.5
+  }
+  
+  .momentum {
+    background-color:lightgray;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right:5%;
+    padding-left: 5%;
+    
+  }
+  
+  .momentum img {
+    width: 100%;
+    max-height: auto;
+  }
+  
+  .momentum div {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    padding: 20px
+  }
+
+  .colour_day_offer {
+  
+    background-image: url(../discount.jpeg);
+    background-size:cover;
+    background-repeat:no-repeat; background-position: center;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top:100px;
+    color:white;
+    padding:4%;
+    margin-bottom: 100px
+}
+}
