@@ -2751,6 +2751,15 @@ input, select, textarea {
 			align-items: center;
 		}
 
+		.proj_row{
+			flex-direction: column;
+			
+		}
+
+		.example{
+			margin: 20px 0 20px 0
+		}
+
 		.projects p {
 			max-width:60%
 		}
