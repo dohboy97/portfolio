@@ -21,9 +21,7 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
 
-}
 
 
 
@@ -167,6 +165,12 @@ color:black}
   margin-right:10%;
   margin-top: 30px;
   margin-bottom:30px
+}
+
+.icons i {
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 12px;
 }
 
 .icons div {
