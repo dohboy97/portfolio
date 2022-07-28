@@ -367,8 +367,8 @@ border-top:5px solid #49403a
   padding-top:0px;
   margin-top:30px;
   margin-bottom:30px;
-  background-color: #8c8586;
-  border: 10px solid #353435;
+  background-color: #d1d1d1e3;
+    border: 10px solid #353435;
   border-radius: 5px
 }
 
@@ -439,8 +439,8 @@ border-top:5px solid #49403a
 }
 
 .openWhen div{
-  background-color: #8c8586;
-  border: 10px solid #353435;
+  background-color: #d1d1d1e3;
+    border: 10px solid #353435;
   border-radius: 10px;
 }
 
@@ -672,7 +672,7 @@ footer span {
   }
 
   .openWhen div {
-    background-color: #8c8586;
+    background-color: #d1d1d1e3;
     border: 10px solid #353435;
   border-radius: 5px;
     height:80%;
