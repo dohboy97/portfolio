@@ -2690,7 +2690,9 @@ input, select, textarea {
 
 	.proj_row{
 		display:flex;
-		margin: 20px 0 20px 0
+		margin: 20px 0 20px 0;
+		justify-content: space-evenly
+		
 	}
 
 	.solo {
@@ -2702,6 +2704,7 @@ input, select, textarea {
 		flex-direction:column;
 		align-items: center;
 		padding: 0 3% 0 3%;
+		
 		
 	}
 
@@ -2720,6 +2723,7 @@ input, select, textarea {
 
 	.projects a{
 		border-bottom:none;
+		max-width: 600px;
 	}
 
 	.projects p {
@@ -2728,18 +2732,34 @@ input, select, textarea {
 
 	.projects a:hover{
 		color:black;
-		border: 3px solid black;
-		border-radius: 20px;
+		border: 0px solid black;
+		border-radius: 90px;
 		transition: 0.35s ease-in-out
 	}
 
 
 	
-	/* ================================================================================== ABOUT ME =================================================== */ 
+	/* ================================================================================== ABOUT ME 
+	=================================================== */ 
+
+	.about-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 8% 0 8%
+	}
+
+	.img_container{
+		display: flex;
+		justify-content: center;
+		max-width: 900px;
+	}
 
 	#about img {
 		border: 6px solid #8ebebc;
 		border-radius: 20px;
+		
 	}
 
 	
