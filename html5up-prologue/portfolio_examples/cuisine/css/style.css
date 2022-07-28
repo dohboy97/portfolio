@@ -123,12 +123,13 @@ select {
   width: 350px;
   height: 40px;
   
-  border:0px solid white;
+  border:1px solid white;
+  
   padding: 0px
 }
 
 .welcome select {
-  height:40px;
+  height:41px;
   background-color:#574c4a;
   color:white;
   border: 2px solid #574c4a;
@@ -139,12 +140,12 @@ select {
 
 .welcome button {
   background-color:white;
-  height:40px;
-  border:2px solid white;
+  height:41px;
+  border:1px solid white;
   border-top-left-radius:5px;
   border-bottom-left-radius:5px;
+  
 }
-
 .welcome a {
   color: black;
   transition:0.7s ease;
@@ -697,5 +698,9 @@ footer span {
   .specialty img {
     width: 70%;
     height: auto
+  }
+
+  .welcome input, .welcome button, .welcome select{
+    display: none;
   }
 }
