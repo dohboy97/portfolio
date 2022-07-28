@@ -494,10 +494,18 @@ border-top:5px solid #49403a
   
 }
 
+.bottom h6{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 16px;
+}
+
 .bottom img {
   border:5px solid #49403a;
-  border-radius: 20px;
+  border-radius: 360px;
+  max-width: 150px;
 }
+
 
 .bottom h3 {
   margin-top: 16px;
