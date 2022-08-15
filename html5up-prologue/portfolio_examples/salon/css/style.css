@@ -81,24 +81,28 @@ main::before {
 }
 
 main {
-  background-image: url("../pinkhair.jpeg");
+  background-image: url("../barber_test_3.jpg");
   background-size:cover;
   background-repeat:no-repeat; background-position: center;
   height: 800px;
  
   
   padding-left: 10%;
-  padding-top:7%
+  padding-top:5%
 }
 
 h1 {
   font-size: 70px;
   color:white;
+  margin-bottom: 15px;
+  
 }
 
 main p {
   color:white; 
-  font-size:30px
+  font-size:30px;
+  padding-bottom:50px
+  
 
 }
 
@@ -352,7 +356,8 @@ line-height: 1.5;}
 .lookbook {
   display:flex;
   justify-content:center;
-  align-items:center
+  align-items:center;
+ 
 }
 
 
@@ -380,9 +385,33 @@ line-height: 1.5;}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+@media (min-width:0px) and (max-width:600px){
+.container_for_wrap{
+  display:flex;
+}
 
+.container_for_wrap img {
+  max-width: 155px;
+}
+
+.five{
+  padding-right: 5px;
+}
+.six{
+  padding-left:5px
+}
+
+.lookbook{
+  flex-wrap:wrap
+}
+}
 
 @media (min-width:0px) and (max-width:800px){
+  
+  main{
+    height:1000px
+  }
+  
   .icons {
     display:flex;
     flex-direction: column;
