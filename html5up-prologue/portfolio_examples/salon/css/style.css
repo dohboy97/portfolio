@@ -480,8 +480,34 @@ footer span {
     font-size: 25px;
   }
 
+  .hamburger:hover{
+    cursor:pointer;
+
+  }
+
+  .real-nav-menu{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top:34px;
+    width:100%;
+    
+    padding-bottom:15px;
+    
+    background-color: rgba(0, 0, 0, 0.705);
+   
+  }
+
+  .hideAndSeek{
+    display:none;
+    transition:0.7s ease
+  }
+
   nav{
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top:10px

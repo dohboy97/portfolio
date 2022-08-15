@@ -1,3 +1,5 @@
+
+
 document.querySelector('.hamburger').addEventListener('click', hamMenu)
 
 const nav = document.querySelector('.real-nav-menu')
