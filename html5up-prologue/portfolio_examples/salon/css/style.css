@@ -37,6 +37,14 @@ nav {
   
 }
 
+.real-nav-menu{
+  display:none
+}
+
+.hamburger{
+  display:none
+}
+
 li {
   display:inline;
   padding: 30px
@@ -458,6 +466,27 @@ footer span {
 
 @media (min-width:0px) and (max-width:800px){
   
+  .web-nav{
+    display:none
+  }
+
+  .book{
+    display:none
+  }
+
+  .hamburger{
+    display:block;
+    color:white;
+    font-size: 25px;
+  }
+
+  nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:10px
+  }
+
   main{
     height:1000px
   }
